@@ -1,0 +1,27 @@
+# The data warehouse toolkit v3 chap.8
+apiVersion: v1
+kind: Star
+tables:
+- name: Transaction
+  metadata:
+    root: true
+  definition:
+    type: graphql
+    url: 'http://localhost:4020'
+    query: 'transaction'
+  links:
+  - to: Customer
+    key: CustomerKey
+- name: Customer
+  definition:
+    type: graphql-opencrud
+    url: 'http://localhost:4021'
+    query: 'customer'
+  links:
+  - to: DateOf1stPurchase
+    key: DateOf1StPurchaseKey
+- name: DateOf1stPurchase
+  definition:
+    type: graphql-opencrud
+    url: 'http://localhost:4021'
+    query: 'dateof1stpurchase'

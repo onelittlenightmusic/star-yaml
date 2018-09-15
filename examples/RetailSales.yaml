@@ -1,0 +1,54 @@
+# The data warehouse toolkit v3 chap.3
+apiVersion: v1
+kind: Star
+tables:
+- name: RetailSalesFact
+  metadata:
+    root: true
+  definition:
+    type: graphql
+    url: 'http://localhost:4020'
+    query: 'retailsales'
+  links:
+  - to: Date
+    key: DateKey
+  - to: Store
+    key: StoreKey
+  - to: Cachier
+    key: CachierKey
+  - to: Product
+    key: ProductKey
+  - to: Promotion
+    key: PromotionKey
+  - to: PaymentMethods
+    key: PaymentMethodKey
+- name: Date
+  definition:
+    type: graphql-opencrud
+    url: 'http://localhost:4021'
+    query: 'date'
+- name: Store
+  definition:
+    type: graphql-opencrud
+    url: 'http://localhost:4021'
+    query: 'store'
+- name: Cashier
+  definition:
+    type: graphql-opencrud
+    url: 'http://localhost:4021'
+    query: 'cachier'
+- name: Product
+  definition:
+    type: graphql-opencrud
+    url: 'http://localhost:4021'
+    query: 'product'
+- name: Promotion
+  definition:
+    type: graphql-opencrud
+    url: 'http://localhost:4021'
+    query: 'promotion'
+- name: PaymentMethod
+  definition:
+    type: graphql-opencrud
+    url: 'http://localhost:4021'
+    query: 'paymentmethod'

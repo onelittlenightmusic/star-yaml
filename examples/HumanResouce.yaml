@@ -1,0 +1,33 @@
+# The data warehouse toolkit v3 chap.9
+apiVersion: v1
+kind: Star
+tables:
+- name: EmployeeTransaction
+  metadata:
+    root: true
+  definition:
+    type: graphql
+    url: 'http://localhost:4020'
+    query: 'employeetxs'
+  links:
+  - to: Employee
+    key: EmployeeKey
+  - to: EmployeeTransactionType
+    key: EmployeeTransactionTypeKey
+  - to: Date
+    key: DateKey
+- name: Employee
+  definition:
+    type: graphql-opencrud
+    url: 'http://localhost:4021'
+    query: 'employee'
+- name: EmployeeTransactionType
+  definition:
+    type: graphql-opencrud
+    url: 'http://localhost:4021'
+    query: 'employeetransactiontype'
+- name: Date
+  definition:
+    type: graphql-opencrud
+    url: 'http://localhost:4021'
+    query: 'date'
