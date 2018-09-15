@@ -48,3 +48,17 @@ There are example YAMLs to represent each chapter star schemas from Data warehou
 | [GeneralLedger](examples/GeneralLedger.yaml) | 7             | GeneralLedger |
 | [CRM](examples/CRM.yaml)           | 8             | Transactions |
 | [Human Resource](examples/HumanResource.yaml) | 9             | EmployeeTransactions |
+
+## Tools
+
+- [graphql-stargen](https://github.com/onelittlenightmusic/graphql-stargen) 
+Mashup gateway automatically generated according to star-yaml description
+
+## License
+
+Open source.
+Apache licence version 2.
+
+## Contribution
+
+Feel free to add issues and features.
