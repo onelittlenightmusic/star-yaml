@@ -8,7 +8,7 @@ Non-proprietary YAML format for star schema and snowflake schema
 - Integration of any table definition
 - *ONLY* join keys will be defined as a connnection among tables
 
-```
+```yaml
 apiVersion: v1
 kind: Star
 tables:
