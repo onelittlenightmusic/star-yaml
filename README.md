@@ -16,7 +16,7 @@ tables:
   metadata:
     root: true
   definition:
-    type: SQL
+    type: sql
     url: 'postgres://localhost:5432'
     query: 'users'
   links:
@@ -30,6 +30,11 @@ tables:
     url: 'http://localhost:4021'
     query: 'locations'
 ```
+
+## Docs
+
+- [Definition of TABLES](docs/definition.md)
+- Links
 
 ## Examples
 
