@@ -34,3 +34,12 @@ tables:
 ## Examples
 
 There are example YAMLs to represent each chapter star schemas from Data warehouse toolkit by Ralph Kimball, Mergy Ross
+
+| Contents      | Chapter       | Fact(root) table  |
+| ------------- |---------------| ------------------|
+| [Retail Sales](examples/RetailSales.yaml)   | 3             | RetailSales |
+| [Inventory](examples/Inventory.yaml)        | 4             | Inventories |
+| [Procurement](examples/Procurement.yaml)    | 5             | Procurements |
+| [GeneralLedger](examples/GeneralLedger.yaml) | 7             | GeneralLedger |
+| [CRM](examples/CRM.yaml)           | 8             | Transactions |
+| [Human Resource](examples/HumanResources.yaml) | 9             | EmployeeTransactions |
