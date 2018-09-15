@@ -42,4 +42,4 @@ There are example YAMLs to represent each chapter star schemas from Data warehou
 | [Procurement](examples/Procurement.yaml)    | 5             | Procurements |
 | [GeneralLedger](examples/GeneralLedger.yaml) | 7             | GeneralLedger |
 | [CRM](examples/CRM.yaml)           | 8             | Transactions |
-| [Human Resource](examples/HumanResources.yaml) | 9             | EmployeeTransactions |
+| [Human Resource](examples/HumanResource.yaml) | 9             | EmployeeTransactions |
